@@ -137,71 +137,70 @@
 
   <main>
     <article>
-        <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png'); margin: 0%;" aria-label="hero">
+        <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png'); margin: 0%; height: 100vh; justify-content: center; display:flex;" aria-label="hero">
             <!-- Login and Registration Form -->
             <div class="container">
               <div class="form-container">
-
                 <form action="#" method="POST">
                   <!-- Login Information -->
                   <div class="form-section">
                     <div class="form-field">
-                      <label for="full-name">FULL NAME</label>
-                      <input type="text" id="full-name" name="full_name" required>
+                      <label for="full-name">NAMA</label>
+                      <input type="text" id="full-name" name="nama" required>
                     </div>
                     <div class="form-field">
-                      <label for="mobile">MOBILE NUMBER</label>
-                      <input type="text" id="mobile" name="mobile_number" required>
+                      <label for="mobile">NOMOR INDUK MAHASISWA</label>
+                      <input type="text" id="mobile" name="nim" required>
                     </div>
                   </div>
                   <!-- Donor Information -->
                   <div class="form-section">
                     <div class="form-field">
-                      <label for="blood-group">BLOOD GROUP</label>
-                      <select id="blood-group" name="blood_group" required>
-                        <option value="" disabled selected>Select Blood Group</option>
-                        <option value="A+">A+</option>
-                        <option value="A-">A-</option>
-                        <option value="B+">B+</option>
-                        <option value="B-">B-</option>
-                        <option value="AB+">AB+</option>
-                        <option value="AB-">AB-</option>
-                        <option value="O+">O+</option>
-                        <option value="O-">O-</option>
-                      </select>
-                    </div>
-                    <div class="form-field">
-                      <label for="birth-date">BIRTH DATE</label>
-                      <input type="date" id="birth-date" name="birth_date" required>
-                    </div>
-                    <div class="form-field">
-                      <label for="gender">GENDER</label>
+                      <label for="gender">PANGKAT</label>
                       <select id="gender" name="gender" required>
-                        <option value="" disabled selected>Select Gender</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
+                        <option value="" disabled selected hidden></option>
+                        <option value="prajurit">Prajurit Kadet</option>
+                        <option value="kopral">Kopral Kadet</option>
+                        <option value="sersan">Sersan Kadet</option>
+                        <option value="mayor_dua">Sersan Mayor Dua Kadet</option>
+                        <option value="mayor_satu">Sersan Mayor Satu Kadet</option>
                       </select>
                     </div>
                     <div class="form-field">
-                      <label for="weight">WEIGHT</label>
+                      <label for="gender">FAKULTAS</label>
+                      <select id="gender" name="gender" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="fkm">Fakultas Kedokteran Militer</option>
+                        <option value="ffm">Fakultas Farmasi Militer</option>
+                        <option value="fmipa">Fakultas MIPA Militer</option>
+                        <option value="fstp">Fakultas Sains dan Teknologi Pertahanan</option>
+                      </select>
+                    </div>
+                    <div class="form-field">
+                      <label for="mobile">PROGRAM STUDI</label>
+                      <input type="text" id="mobile" name="nim" required>
+                    </div>
+                    
+                    
+                    <div class="form-field">
+                      <label for="weight">KENDARAAN</label>
                       <input type="text" id="weight" name="weight" required>
                     </div>
                   </div>
                   <!-- Contact Information -->
                   <div class="form-section">
                     <div class="form-field">
-                      <label for="state">STATE</label>
+                      <label for="state">NAMA ORANG TUA</label>
                       <input type="text" id="state" name="state" required>
                     </div>
                     <div class="form-field">
-                      <label for="district">DISTRICT</label>
+                      <label for="district">NOMOR HP ORANG TUA</label>
                       <input type="text" id="district" name="district" required>
                     </div>
                     
                   </div>
                   <div class="form-field">
-                      <label for="area">Landmarks</label>
+                      <label for="area">ALAMAT</label>
                       <input type="text" id="landmarks" name="landmarks" required>
                     </div>
                     <button class="custom-btn btn-5" onclick="window.location.href='cuti.php'"><span>Daftar</span></button>
